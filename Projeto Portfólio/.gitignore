@@ -1,0 +1,30 @@
+# Ignorar diretórios e arquivos pessoais
+3D Objects/
+Ambiente de Impressão/
+Ambiente de Rede/
+AppData/
+Configurações Locais/
+Cookies/
+Dados de Aplicativos/
+Desktop/
+Documents/
+Downloads/
+Favorites/
+IntelGraphicsProfiles/
+Links/
+Menu Iniciar/
+Meus Documentos/
+Modelos/
+Music/
+OneDrive/
+Portfolio/
+Recent/
+Saved Games/
+Searches/
+SendTo/
+Videos/
+*.gcode
+*.LOG1
+*.LOG2
+*.ini
+
