@@ -3,11 +3,11 @@
 
 
 :root {
-    --main-color: #00eeff;
-    --text-color: #ffffff;
-    --bg-color-01: #1f242d;
-    --bg-color-02: #323946;
-    --color-00: #0000001a;
+    --main-color: #00ff73;       /* verde neon */
+    --text-color: #e0f2f1;       /* branco esverdeado suave, mais agradável que #fff puro */
+    --bg-color-01: #121212;      /* fundo escuro profundo - dá destaque ao neon */
+    --bg-color-02: #1e1e1e;      /* fundo secundário levemente mais claro */
+    --color-00: #00b359;
 
     /* Extra */
 
