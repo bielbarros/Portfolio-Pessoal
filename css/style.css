@@ -327,6 +327,59 @@ span {
     color: var(--main-color);
 }
 
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente (se quiser também) */
+  padding: 40px 20px;
+  min-height: 100vh; /* Para centralizar verticalmente na tela */
+}
+
+
+#contato h2 {
+    width: 100%; 
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Limita a largura para não ficar esticado */
+}
+
+#contactForm input, 
+#contactForm textarea {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+#contactForm button {
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: var(--main-color); 
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: var(--bg-color-02); 
+    color: var(--main-color); 
+    box-shadow: 0 0 10px var(--main-color); 
+    transform: scale(1.05); 
+    transition: 0.5s ease;
+}
+
+
 footer {
     display: flex;
     flex-direction: row;

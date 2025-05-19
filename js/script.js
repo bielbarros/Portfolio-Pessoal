@@ -16,3 +16,36 @@ function toggleMenu() {
         nav.style.display = 'none'; 
     }
 }
+
+
+
+ // Validação e feedback do formulário
+  const form = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Simples validação
+    const nome = form.nome.value.trim();
+    const email = form.email.value.trim();
+    const mensagem = form.mensagem.value.trim();
+
+    if (!nome || !email || !mensagem) {
+      alert('Por favor, preencha todos os campos.');
+      return;
+    }
+
+    // Validação básica de email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Por favor, insira um email válido.');
+      return;
+    }
+
+    // Se chegou até aqui, tudo OK — você pode adicionar aqui integração para envio real (ex: backend)
+    formMessage.textContent = 'Mensagem enviada com sucesso! Obrigado pelo contato, ' + nome + '.';
+    formMessage.style.display = 'block';
+
+    form.reset();
+  });
