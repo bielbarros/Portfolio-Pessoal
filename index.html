@@ -2,16 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Torna o site responsivo em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Website</title>
     <link rel="shortcut icon" href="#" type="image/x-icon">
-    <!-- box icons -->
+    <!-- Biblioteca de ícones Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- custom css -->
+    <!-- Inserindo meu arquivo style.css para dar aparência ao site -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Cabeçalho com logo e navegação -->
     <header>
+        <!-- Navegação principal (versão desktop) -->
        <a href="#" class="logo">Portfólio</a>
        <div class="nav">
             <a href="#home">Home</a>
@@ -21,7 +25,7 @@
             <a href="#contato">Contato</a>
             <a href="#about">About</a>    
        </div>
-
+        <!-- Navegação alternativa (versão responsiva) -->
        <div class="nav-responsive">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
@@ -30,19 +34,20 @@
             <a href="#contato">Contato</a>
             <a href="#about">About</a>    
         </div>
-
+        <!-- Ícone do menu hambúrguer (para mobile) -->
        <div class="menu-hamburguer">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
        </div>
     </header>
-    <!-- home section -->
+    <!-- Seção Home (introdução) -->
      <section class="home" id="home">
         <div class="home-content">
             <h3>Hey! I'm</h3>
             <h1>Gabriel Barros</h1>
             <h3>Back-end <span>Developer</span></h3>
+             <!-- Parágrafo com informações profissionais -->
             <p>
                 • Graduating in Computer Science
                 • 2 year experience
@@ -50,26 +55,27 @@
                 • Studying object-oriented architecture using the Java language and its frameworks
 
             </p>
+            <!-- Links das redes sociais -->
             <div class="social-media">
                 <a href="https://github.com/bielbarros" target="_blank"><i class='bx bxl-github' ></i></a>
                 <a href="https://www.linkedin.com/in/gabriel-sbarros/" target="_blank"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://www.instagram.com/gabrielbarros_11/" target="_blank"><i class='bx bxl-instagram' ></i></a>
              </div>
-
+             <!-- Botão para download do currículo -->
              <div>
                 <a href="https://drive.google.com/file/d/11OIKqESTxWy5dh5uUSrO5kCPCQSqiTla/view?usp=sharing" target="_blank" class="btn">Download CV</a>
              </div>
 
 
         </div>
-
+        <!-- Imagem de perfil -->
         <div class="home-img">
             <img src="img/profile.png" alt="Profile picture">
         </div>
      </section>
-    <!-- /home section -->
+    <!-- fim da sessão home -->
 
-    <!-- service section -->
+    <!-- Seção de Serviços -->
      <section class="services" id="services">
         <h2>Our <span>Services</span></h2>
         <div class="services-container">
@@ -106,12 +112,12 @@
         </div>
 
      </section>
-    <!-- /service section -->
+    <!-- fim da sessão de serviços -->
 
-    <!-- portfolio section -->
+    <!-- Seção de Portfólio -->
      <section class="portfolio" id="portfolio">
         <h2>Latest <span>Projects</span></h2>
-
+        <!-- Projetos -->
         <div class="portfolio-container">
             <div class="portfolio-box">
                 <img src="img/2.png" alt="Portfolio 1">
@@ -252,14 +258,14 @@
             
         </div>
      </section>
-    <!-- /portfolio section -->
+    <!-- Fim da sessão de projetos -->
 
-    <!-- skills section -->
+    <!-- Seção de Habilidades -->
     <section class="skills" id="skills">
         <h2>My <span>Skills</span></h2>
 
         <div class="skills-container">
-            <!-- Individual Skill Items -->
+            <!-- Skills individuais -->
             
             <div class="skills-box">
                 <div class="skill-item">
@@ -393,9 +399,9 @@
 
         </div>
     </section>
-    <!-- /skills section -->
+    <!-- Fim da sessão de skilss -->
 
-    <!-- contato section -->
+    <!-- Sessão de contatos -->
 
     <!-- Formulário de Contato -->
     <section id="contato" style="padding: 20px; max-width: 400px; margin: auto;">
@@ -415,8 +421,9 @@
 
     <p id="formMessage" style="color: green; font-weight: bold; display: none; margin-top: 10px;"></p>
     </section>
+    <!-- Fim da sessão de contato -->
 
-    <!-- about section -->
+    <!-- Sessão Sobre mim -->
      <section class="about" id="about">
         <div class="about-img">
             <img src="img/profile.png" alt="About me">
@@ -435,8 +442,9 @@
         </div>
 
      </section>
-    <!-- /about section -->
+    <!-- Fim da Sessão Sobre mim -->
 
+     <!-- Rodapé -->
     <footer>
         <p>
             Copyright &copy; 2024 by &lt;GBarros&gt;. All Rigths Reserved.
@@ -444,5 +452,6 @@
     </footer>
 
 </body>
+<!-- Inserção do código em JavaScript puro -->
 <script src="js/script.js"></script>
 </html>

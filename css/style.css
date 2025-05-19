@@ -1,7 +1,7 @@
-/* Imports the Poppins font from Google Fonts */
+/* Importando a fonte Poppins do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+/* Cores principais, de fundo, texto e destaque */
 :root {
     --main-color: #00ff73;       /* verde neon */
     --text-color: #e0f2f1;       /* branco esverdeado suave, mais agradável que #fff puro */
@@ -18,6 +18,11 @@
     --color-05: #232323;
 }
 
+
+/* -------------------------------
+   VARIÁVEIS GLOBAIS DE CORES E ESTILO
+   Define cores e temas utilizados em todo o site
+-------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +33,10 @@
     scroll-behavior: smooth;
 }
 
+/* -------------------------------
+   CONFIGURAÇÕES GERAIS DO HTML E BODY
+   Define fonte padrão, cor de fundo e cor do texto
+-------------------------------- */
 
 html {
     font-family: 'Poppins', sans-serif;
@@ -39,6 +48,10 @@ body {
     color: var(--text-color);
 }
 
+/* -------------------------------
+   CABEÇALHO (HEADER)
+   Define a posição fixa do menu e seu estilo
+-------------------------------- */
 header {
     position: fixed;
     top: 0;
@@ -59,6 +72,10 @@ header {
     cursor: default;
 }
 
+/* -------------------------------
+   NAVEGAÇÃO (NAV)
+   Estilos para os links do menu principal e responsivo
+-------------------------------- */
 .nav-responsive {
     display: none;
     position: absolute;
@@ -81,6 +98,13 @@ header {
     color: var(--main-color);
 }
 
+
+
+/* -------------------------------
+   SESSÕES DA PÁGINA
+   Define espaçamento e altura mínima das seções
+-------------------------------- */
+
 section {
     min-height: 100vh;
     padding: 6rem 6rem 2rem;
@@ -90,12 +114,25 @@ span {
     color: var(--main-color);
 }
 
+
+/* -------------------------------
+   HOME E SOBRE
+   Define layout em duas colunas para essas seções
+-------------------------------- */
+
 .home, .about {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
+
+
+
+/* -------------------------------
+   IMAGENS
+   Estilização de imagens com bordas e efeitos visuais
+-------------------------------- */
 
 .home-img {
     border-right: solid 0.6rem;
@@ -144,6 +181,11 @@ span {
     text-align: center;
 }
 
+
+/* -------------------------------
+   SESSÃO DE SERVIÇOS (Services)
+   Estilo dos cards de serviços com hover animado
+-------------------------------- */
 .services-container {
     display: flex;
     flex-direction: row;
@@ -262,6 +304,12 @@ span {
     color: var(--bg-color-02);
 }
 
+
+/* -------------------------------
+   SESSÃO DE HABILIDADES (SKILLS)
+   Estilo dos cards de habilidades com hover animado
+-------------------------------- */
+
 .skills {
     padding: 2rem;
     padding-top: calc(2rem + 80px); /* Ajuste '80px' para o valor da altura do cabeçalho */
@@ -327,6 +375,10 @@ span {
     color: var(--main-color);
 }
 
+/* -------------------------------
+   FORMULÁRIO DE CONTATO
+   Layout e estilo do formulário com inputs e botões
+-------------------------------- */
 
 .contactForm {
   display: flex;
@@ -380,6 +432,12 @@ span {
 }
 
 
+
+/* -------------------------------
+   RODAPÉ (FOOTER)
+   Estilização da parte inferior do site
+-------------------------------- */
+
 footer {
     display: flex;
     flex-direction: row;
@@ -416,7 +474,7 @@ footer {
 }
 
 
-/* Button */
+/* Configurações gerais para botões */
 
 .btn {
     display: inline-block;
@@ -439,7 +497,7 @@ footer {
 
 }
 
-/* /Button */
+/* Fim das configurações dos botões */
 
 /* Menu hamburguer */
 .menu-hamburguer{
@@ -469,7 +527,10 @@ footer {
 
 /* /Menu hamburguer */
 
-/* media queries */
+/* -------------------------------
+   MEDIA QUERIES (Responsividade)
+   Estilos adaptativos para telas menores
+-------------------------------- */
 
 /* Extra Small(xs): Smartphone (portrait) */
 @media (min-width: 0px) {

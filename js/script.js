@@ -1,4 +1,4 @@
-// Turns the menu hamburguer into a X //
+// Código para transformar o menu hambuguer em x ao fechar //
 
 const menuHamburguer = document.querySelector('.menu-hamburguer')
 menuHamburguer.addEventListener('click', () => {
@@ -43,7 +43,7 @@ function toggleMenu() {
       return;
     }
 
-    // Se chegou até aqui, tudo OK — você pode adicionar aqui integração para envio real (ex: backend)
+    // Simulação do envio de mensagem
     formMessage.textContent = 'Mensagem enviada com sucesso! Obrigado pelo contato, ' + nome + '.';
     formMessage.style.display = 'block';
 
